@@ -1,0 +1,3 @@
+[submodule "plugins/Denizen/scripts/cdnc"]
+	path = plugins/Denizen/scripts/cdnc
+	url = https://github.com/acikek/cdnc
