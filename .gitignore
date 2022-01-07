@@ -1,0 +1,20 @@
+# Data folders
+cache
+libraries
+logs
+versions
+
+# Plugin folder
+plugins/bStats
+plugins/*.jar
+plugins/Denizen/*
+!plugins/Denizen/scripts
+!plugins/Denizen/config.yml
+
+# World folders
+world*
+
+# Various files
+.console_history
+*.json
+paper.jar
