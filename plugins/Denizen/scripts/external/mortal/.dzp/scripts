@@ -1,0 +1,63 @@
+---
+mortal:
+  path: "./src/main/mortal.dsc"
+  type: world
+  keys:
+    - events
+    - type
+  doc: ~
+mortal_actions:
+  path: "./src/main/actions.dsc"
+  type: world
+  keys:
+    - events
+    - type
+  doc: ~
+mortal_cancel_state:
+  path: "./src/main/actions.dsc"
+  type: world
+  keys:
+    - events
+    - type
+  doc: ~
+mortal_create_grave:
+  path: "./src/util/grave.dsc"
+  type: task
+  keys:
+    - definitions
+    - script
+    - type
+  doc: ~
+mortal_find_dying_player:
+  path: "./src/util/death.dsc"
+  type: task
+  keys:
+    - script
+    - type
+  doc: ~
+mortal_mortem:
+  path: "./src/cmd/mortem.dsc"
+  type: command
+  keys:
+    - aliases
+    - description
+    - name
+    - script
+    - type
+    - usage
+  doc: ~
+mortal_revive:
+  path: "./src/util/revive.dsc"
+  type: task
+  keys:
+    - definitions
+    - script
+    - type
+  doc: ~
+mortal_true_death:
+  path: "./src/util/death.dsc"
+  type: task
+  keys:
+    - script
+    - type
+  doc: ~

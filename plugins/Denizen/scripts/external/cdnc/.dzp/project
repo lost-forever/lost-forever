@@ -1,0 +1,10 @@
+---
+name: cdnc
+description: Control Day-Night Cycle
+authors:
+  - acikek
+version: 1.0.0
+license: MIT
+homepage: "https://github.com/acikek/cdnc"
+repository: "https://github.com/acikek/cdnc"
+dependencies: []
