@@ -1,6 +1,6 @@
-[submodule "plugins/Denizen/scripts/external/mortal"]
-	path = plugins/Denizen/scripts/external/mortal
-	url = https://github.com/acikek/mortal
 [submodule "plugins/Denizen/scripts/external/cdnc"]
 	path = plugins/Denizen/scripts/external/cdnc
 	url = https://github.com/acikek/cdnc
+[submodule "plugins/Denizen/scripts/external/mortal"]
+	path = plugins/Denizen/scripts/external/mortal
+	url = https://github.com/acikek/mortal
