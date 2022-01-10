@@ -22,3 +22,6 @@ paper.jar
 
 # Leave eula out - make end user enable it
 eula.txt
+
+# Ignore server.properties until production-ready
+server.properties
