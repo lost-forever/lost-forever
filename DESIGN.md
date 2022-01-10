@@ -37,3 +37,7 @@ I (acikek) will speak from my perspective in this section. One of the primary go
 Personally, I do not care if people choose to fork this project, close it off, and monetize it. More than anything, this is a passion project and a demonstration of how Minecraft servers could be organized ideally in my perspective.
 
 However, I guarantee that the Lost Forever instance that I host will be completely free-to-play for authenticated Minecraft users. Of course, I plan on accepting donations in the future, but that system will be disconnected from the server insofar as gameplay.
+
+### Daxz
+
+Daxz wanted their name here.
