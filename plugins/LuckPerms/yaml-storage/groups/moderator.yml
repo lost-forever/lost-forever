@@ -1,0 +1,4 @@
+name: moderator
+permissions:
+- minecraft.command.ban
+- minecraft.command.kick

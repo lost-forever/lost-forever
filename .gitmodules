@@ -4,3 +4,6 @@
 [submodule "plugins/Denizen/scripts/external/mortal"]
 	path = plugins/Denizen/scripts/external/mortal
 	url = https://github.com/acikek/mortal
+[submodule "plugins/Denizen/scripts/external/rank"]
+	path = plugins/Denizen/scripts/external/rank
+	url = https://github.com/acikek/rank

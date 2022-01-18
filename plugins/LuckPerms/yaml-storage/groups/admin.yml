@@ -1,0 +1,12 @@
+name: admin
+permissions:
+- citizens.*
+- denizen.*
+- sentinel.*
+- bukkit
+- luckperms
+- minecraft
+- sentinel
+- vault
+parents:
+- moderator
