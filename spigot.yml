@@ -12,7 +12,7 @@
 
 messages:
   whitelist: You are not whitelisted on this server!
-  unknown-command: Unknown command. Type "/help" for help.
+  unknown-command: '&7Unknown command.'
   server-full: The server is full!
   outdated-client: Outdated client! Please use {0}
   outdated-server: Outdated server! I'm still on {0}

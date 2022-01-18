@@ -6,11 +6,22 @@ versions
 
 # Plugin folder
 plugins/bStats
-plugins/Citizens/saves.yml
 plugins/*.jar
+
+# Citizens
+plugins/Citizens/saves.yml
+
+# Denizen
 plugins/Denizen/*
 !plugins/Denizen/scripts
 !plugins/Denizen/config.yml
+
+# LuckPerms
+plugins/LuckPerms/*
+!plugins/LuckPerms/config.yml
+!plugins/LuckPerms/yaml-storage
+plugins/LuckPerms/yaml-storage/*
+!plugins/LuckPerms/yaml-storage/groups
 
 # World folders
 world*
