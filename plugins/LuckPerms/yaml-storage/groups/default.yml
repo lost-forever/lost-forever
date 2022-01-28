@@ -1,1 +1,6 @@
 name: default
+permissions:
+- chat.channel
+- chat.ignore
+parents:
+- default
