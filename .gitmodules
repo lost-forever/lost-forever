@@ -7,3 +7,6 @@
 [submodule "plugins/Denizen/scripts/external/rank"]
 	path = plugins/Denizen/scripts/external/rank
 	url = https://github.com/acikek/rank
+[submodule "plugins/Denizen/scripts/native/chat-util"]
+	path = plugins/Denizen/scripts/native/chat-util
+	url = https://github.com/lost-forever/chat-util
