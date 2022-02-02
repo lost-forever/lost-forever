@@ -1,6 +1,7 @@
 ## Required Plugins
 
 - [Citizens](https://ci.citizensnpcs.co/job/Citizens2/)
+- [dDiscordBot](https://ci.citizensnpcs.co/job/dDiscordBot/)
 - [Denizen](https://ci.citizensnpcs.co/job/Denizen_Developmental/)
 - [Depenizen](https://ci.citizensnpcs.co/job/Depenizen/)
 - [LuckPerms](https://luckperms.net/download)
