@@ -1,6 +1,6 @@
 # Sentinel plugin configuration file
-
 # Default settings for a new NPC
+# Generally these should be edited per-NPC via command, unless you really want this apply to every NPC ever
 sentinel defaults:
     # Whether 'close quarters' NPCs should chase targets.
     close chase target: true
@@ -56,7 +56,8 @@ sentinel defaults:
     allow knockback: true
     # How much XP to drop when the NPC dies.
     death xp: 0
-
+    # Whether the NPC should be protected from damage by ignore targets.
+    protected: true
 random:
     # How long (in ticks) NPCs should run away for (when hit or told to avoid threats).
     run away time: 1200
@@ -109,6 +110,18 @@ random:
     retain target: false
     # Whether to prevent block damage caused by Sentinel weapons.
     prevent explosion block damage: true
-
+    # (Experimental) If enabled, will automatically change the NPC's pathfinding mode if the NPC appears to be getting stuck.
+    auto correct pathfinder mode: true
 # How fast to recalculate, in ticks.
 update rate: 10
+#----------- Important! -----------
+# Your configuration file was outdated.
+# It has been automatically updated.
+# You may notice some duplicated comments or other minor inconsistencies,
+# if these annoy you, you may remove the duplicate comments OR
+# delete the config file to allow it to regenerate.
+#
+# The below value is how many times automatic updates have been applied
+# since you last cleaned this file.
+# ----------- End Important! -----------
+times_changed: 1

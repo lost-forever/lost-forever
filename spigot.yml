@@ -5,9 +5,9 @@
 # http://www.spigotmc.org/wiki/spigot-configuration/
 #
 # If you need help with the configuration or have any questions related to Spigot,
-# join us at the IRC or drop by our forums and leave a post.
+# join us at the Discord or drop by our forums and leave a post.
 #
-# IRC: #spigot @ irc.spi.gt ( http://www.spigotmc.org/pages/irc/ )
+# Discord: https://www.spigotmc.org/go/discord
 # Forums: http://www.spigotmc.org/
 
 messages:
@@ -52,13 +52,16 @@ settings:
       max: 2048.0
     attackDamage:
       max: 2048.0
-  log-villager-deaths: true
-  log-named-deaths: true
+  log-villager-deaths: false
+  log-named-deaths: false
   debug: false
 players:
   disable-saving: false
 world-settings:
   default:
+    hopper-can-load-chunks: false
+    seed-nether: 30084232
+    seed-stronghold: default
     below-zero-generation-in-existing-chunks: true
     verbose: false
     merge-radius:
@@ -86,6 +89,7 @@ world-settings:
       cavevines-modifier: 100
       glowberry-modifier: 100
     entity-activation-range:
+      ignore-spectators: false
       animals: 32
       monsters: 32
       raiders: 48

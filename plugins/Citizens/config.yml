@@ -17,6 +17,8 @@ npc:
       max-fall-distance: 3
     attack-range: 3.0625
     use-new-finder: false
+    defaults:
+      destination-teleport-margin: -1
   default:
     bossbar-view-range: 64
     waypoints:
@@ -37,6 +39,7 @@ npc:
       range: 5
     text:
       '0': Hi, I'm <npc>!
+    spawn-nodamage-ticks: 20
   chat:
     options:
       bystanders-hear-targeted-chat: false
@@ -90,6 +93,7 @@ npc:
       not-enough-money: You need at least ${0}.
       on-cooldown: Please wait for {minutes} minutes and {seconds_over} seconds.
       on-global-cooldown: Please wait for {minutes} minutes and {seconds_over} seconds.
+    global-delay-seconds: 1
   packets:
     update-delay: 30
   player:
@@ -100,6 +104,9 @@ npc:
   server-ownership: false
   teleport-delay: -1
   player-scoreboard-teams:
+    enable: true
+  scoreboard-teams:
+    packet-send-ticks: 1
     enable: true
 general:
   authlib:
@@ -115,6 +122,7 @@ general:
   translation:
     locale: ''
   reload-warning-enabled: true
+  entity-spawn-wait-ticks: 20
 advanced:
   check-minecraft-version: true
 economy:
