@@ -1,8 +1,9 @@
-# Data folders
+# Data files
 cache
 libraries
 logs
 versions
+*.dat
 
 # Plugin folder
 plugins/bStats
@@ -16,7 +17,7 @@ plugins/Denizen/*
 !plugins/Denizen/scripts
 !plugins/Denizen/config.yml
 !plugins/Denizen/data
-plugins/Denizen/data/token.txt
+plugins/Denizen/data/*.secret
 
 # LuckPerms
 plugins/LuckPerms/*

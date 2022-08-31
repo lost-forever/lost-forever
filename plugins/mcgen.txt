@@ -1,0 +1,21 @@
+plugins:
+- Denizen:
+    build: 6432
+    file_name: Denizen-1.2.5-b6432-DEV.jar
+    url: "https://ci.citizensnpcs.co/job/Denizen_Developmental/"
+- Citizens:
+    build: 2673
+    file_name: Citizens-2.0.30-b2673.jar
+    url: "https://ci.citizensnpcs.co/job/Citizens2/"
+- Sentinel:
+    build: 484
+    file_name: Sentinel-2.7.0-SNAPSHOT-b484.jar
+    url: "https://ci.citizensnpcs.co/job/Sentinel/"
+- Depenizen:
+    build: 795
+    file_name: Depenizen-2.0.0-b795.jar
+    url: "https://ci.citizensnpcs.co/job/Depenizen/"
+- dDiscordBot:
+    build: 239
+    file_name: dDiscordBot-0.7-b239.jar
+    url: "https://ci.citizensnpcs.co/job/dDiscordBot/"

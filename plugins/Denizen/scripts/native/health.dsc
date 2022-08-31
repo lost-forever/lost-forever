@@ -24,11 +24,11 @@ lf_health_refresh:
   function:
   - define value <script[lf_health_config].data_key[max]>
   # Loop over each player and refresh their max health
-  - foreach <server.players> as:player:
-    - if <[player].health_max> != <[value]>:
-      - adjust <[player]> max_health:<[value]>
-      - heal <[player]>
+  - foreach <server.players> as:__player:
+    - if <player.health_max> != <[value]>:
+      - adjust <player> max_health:<[value]>
+      - heal <player>
       # Confirmation message
-      - if <[player].is_online>:
-        - narrate "<green>You stood the test of time." targets:<[player]>
-        - narrate "<gray><italic>Your max health has been restored." targets:<[player]>
+      - if <player.is_online>:
+        - narrate "<green>You stood the test of time."
+        - narrate "<gray><italic>Your max health has been restored."

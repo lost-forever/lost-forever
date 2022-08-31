@@ -286,6 +286,10 @@ Colors:
     lore: <&7>
     # Your preferred color for NPC names. Scripts that use the "create" command should usually use this.
     npc: <&a>
+    # Chat URLs
+    url: <blue><underline>
+    # Discord branding color
+    discord: <&color[#7289DA]>
 # Settings related to queues.
 Queues:
     # Toggle which parts of a queue ID are used for the queue ID generator.

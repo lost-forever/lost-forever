@@ -20,8 +20,8 @@ cmd_syntax:
   type: task
   debug: false
   script:
-  - narrate <yellow><queue.script.data_key[usage].parsed>
-  - narrate <gray><queue.script.data_key[description]>
+  - narrate <&[emphasis]><queue.script.data_key[usage].parsed>
+  - narrate <&[base]><queue.script.data_key[description]>
   - stop
 
 cmd_err:
@@ -30,8 +30,8 @@ cmd_err:
   definitions: reason
   script:
   - if <[reason].exists>:
-    - define hover "<red>Attempted: <gray>/<context.alias> <context.raw_args>"
-    - narrate <red><[reason].on_hover[<[hover]>]>
+    - define hover "<&[error]>Attempted: <&[base]>/<context.alias> <context.raw_args>"
+    - narrate <&[error]><[reason].on_hover[<[hover]>]>
     - stop
 
 cmd_player:
