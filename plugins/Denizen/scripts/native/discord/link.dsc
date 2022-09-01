@@ -1,21 +1,4 @@
-lf_create_link_command:
-  type: task
-  script:
-  - definemap options:
-      1:
-        type: string
-        name: username
-        description: Your Minecraft username
-        required: true
-
-  - ~discordcommand id:bot create group:<server.flag[discord.group]> name:link "description:Links your Discord account to your Minecraft user." options:<[options]>
-
-lf_create_user_link_command:
-  type: task
-  script:
-  - ~discordcommand id:bot create group:<server.flag[discord.group]> type:user "name:Linked Account"
-
-lf_handle_link:
+lf_discord_handle_link:
   type: task
   definitions: id
   script:
@@ -28,7 +11,7 @@ lf_handle_link:
 
   - define user <server.flag[discord.group].member[<[id]>]>
   - flag <[user]> link:<player.name>
-  - flag <player> discord.link:<[user].id>
+  - flag <player> discord.link:<[user]>
 
   - ~discord id:bot remove_role group:<server.flag[discord.group]> role:<server.flag[discord.roles.unlinked]> user:<[user]>
 
@@ -60,9 +43,9 @@ lf_discord_link:
     - define user <context.interaction.user>
     - define tag <[user].name>#<[user].discriminator>
 
-    - clickable lf_handle_link def:<[tag]> until:5m usages:1 save:accept
+    - clickable lf_discord_handle_link def:<[tag]> until:5m usages:1 save:accept
     - define accept "<element[ACCEPT].on_hover[<green>Click to accept].on_click[<entry[accept].command>]>"
-    - clickable lf_handle_link def:null until:5m usages:1 save:decline
+    - clickable lf_discord_handle_link def:null until:5m usages:1 save:decline
     - define decline "<element[DECLINE].on_hover[<red>Click to decline].on_click[<entry[decline].command>]>"
 
     - ~discordinteraction reply interaction:<context.interaction> "I sent a private message to **<player.name>**. Check Minecraft for details."
@@ -81,14 +64,3 @@ lf_discord_link:
       - else:
         - define message "<[user].mention> isn't linked!"
       - ~discordinteraction reply interaction:<context.interaction> <[message]> ephemeral
-
-lf_check_discord_link:
-  type: task
-  script:
-  - if not <player.has_flag[discord.link]>:
-    - define url "<element[Discord Server].on_hover[Click to join].on_click[<server.flag[discord.invite]>].type[open_url]>"
-    - narrate <empty>
-    - narrate "<&[error]>This action requires you to link your <&[discord]>Discord <&[error]>account."
-    - narrate "<&[base]>Run <&[emphasis]>/link <&[base]>in the <&[url]><[url]><&r> <&[base]>to connect your accounts."
-    - narrate <empty>
-    - stop

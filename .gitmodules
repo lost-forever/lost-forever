@@ -10,3 +10,6 @@
 [submodule "plugins/Denizen/scripts/native/chat-util"]
 	path = plugins/Denizen/scripts/native/chat-util
 	url = https://github.com/lost-forever/chat-util
+[submodule "plugins/Denizen/scripts/native/kingdoms"]
+	path = plugins/Denizen/scripts/native/kingdoms
+	url = https://github.com/lost-forever/kingdoms
