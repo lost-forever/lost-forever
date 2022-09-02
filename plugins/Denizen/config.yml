@@ -279,17 +279,23 @@ Colors:
     # Warning messages. 'narrate' commands displaying a warning message should use this.
     warning: <yellow>
     # Default: the backup for when a color label is unrecognized. Generally don't touch this.
-    default: <white>
+    default: <base>
     # Your preferred color for item names. Item script "display name" keys should usually use this.
     item: <gold>
     # Your preferred item lore base color. Item script "lore" lines should start with this.
-    lore: <&7>
+    lore: <gray>
     # Your preferred color for NPC names. Scripts that use the "create" command should usually use this.
     npc: <&a>
+    # Positive connotations or success
+    positive: <green>
+    # Negative connotations but not error
+    negative: <red>
     # Chat URLs
     url: <blue><underline>
     # Discord branding color
     discord: <&color[#7289DA]>
+    # Emphasizing kingdom features
+    kingdom: <red>
 # Settings related to queues.
 Queues:
     # Toggle which parts of a queue ID are used for the queue ID generator.

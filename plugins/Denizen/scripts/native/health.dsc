@@ -30,5 +30,5 @@ lf_health_refresh:
       - heal <player>
       # Confirmation message
       - if <player.is_online>:
-        - narrate "<green>You stood the test of time."
-        - narrate "<gray><italic>Your max health has been restored."
+        - narrate "<&[positive]>You stood the test of time."
+        - narrate "<&[base]><italic>Your max health has been restored."
