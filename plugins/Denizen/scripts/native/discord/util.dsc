@@ -17,12 +17,12 @@ lf_discord_check_link:
   type: task
   script:
   - if not <player.has_flag[discord.link]>:
-    - run discord_check_link_message
+    - run lf_discord_check_link_message
     - stop
 
 lf_discord_check_link_cancel:
   type: task
   script:
   - if not <player.has_flag[discord.link]>:
-    - run discord_check_link_message
+    - run lf_discord_check_link_message
     - determine cancelled
