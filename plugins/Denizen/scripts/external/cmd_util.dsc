@@ -1,4 +1,4 @@
-# https://forum.denizenscript.com/resources/command-utilities.78/
+#| https://forum.denizenscript.com/resources/command-utilities.78/
 
 #| -- Command Utilities --
 #| Easy injections to keep command scripts concise

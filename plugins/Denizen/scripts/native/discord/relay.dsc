@@ -21,9 +21,11 @@ lf_discord_relay:
     - run lf_discord_send "def:relay|<&gt> ***<player.name>** met their own blade*"
     after player joins:
     - run lf_discord_send "def:relay|<&gt> ***<player.name>** joined*"
-    after player quits:
+    after player quits server_flagged:!auto_restart:
     - run lf_discord_send "def:relay|<&gt> ***<player.name>** left*"
     after custom event id:kdm_create:
     - define first "**<discord_user[<player.flag[discord.link]>].mention>** has founded the new settlement **<context.settlement.get[names].first>**."
     - define second <proc[lf_discord_format_creation_event].context[<context.type>|<context.kingdom_name>]>
     - run lf_discord_send def:events|<[first]><n><[second]>
+    on stop command:
+    - run lf_discord_send "def:relay|<&gt> ***Server stopping...***"
