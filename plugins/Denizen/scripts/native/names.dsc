@@ -9,14 +9,21 @@ names_reload:
     - debug log "Reloading names config..."
     - flag server names:<script[names_config].parsed_key[names]>
 
-random_name:
+random_name_internal:
   type: procedure
   debug: false
-  definitions: type
+  definitions: data|type
   script:
-  - define data <server.flag[names]>
   - define middle "<util.random_chance[25].if_true[ <[data].get[middle].random> ].if_false[ ]>"
   - determine <[data].get[<[type]>].random><[middle]><[data].get[last].random>
+
+random_names:
+  type: procedure
+  debug: false
+  definitions: types
+  script:
+  - define data <server.flag[names]>
+  - determine <[types].parse_tag[<[data].proc[random_name_internal].context[<[parse_value]>]>]>
 
 names_config:
   type: data
