@@ -27,7 +27,9 @@ auto_restart_handler:
     - wait <[mark].sub[<[marks].get[<[loop_index].add[1]>].if_null[0s]>].if_null[5s]>
   - flag server auto_restart duration:5s
   - announce "<&[negative]>Server restarting!"
-  - ~run lf_discord_send "def:relay|<&gt>Server restarting..."
+  - define channel relay
+  - define message "<&gt> ***Server restarting!** Kicking <server.online_players.size> player(s)...*"
+  - inject lf_discord_send "def:relay|<&gt>Server restarting..."
   - kick <server.online_players> "reason:Automatic restart; please wait a minute before rejoining."
   - wait 1s
   - adjust server restart
